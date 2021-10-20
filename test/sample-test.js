@@ -1,3 +1,6 @@
+//this script is used to actually test and deploy the sample-script.js
+//script
+
 const { expect } = require("chai");
 const { ethers } = require("hardhat");
 

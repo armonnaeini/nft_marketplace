@@ -6,7 +6,10 @@ import "hardhat/console.sol";
 contract Greeter {
     string private greeting;
 
-    constr uctor(string memory _greeting) {
+    // _greeting is a pointer to memory address
+    // _greeting is probably big as fuck so that's why we are using
+    // a pointer
+    constructor(string memory _greeting) {
         console.log("Deploying a Greeter with greeting:", _greeting);
         greeting = _greeting;
     }
